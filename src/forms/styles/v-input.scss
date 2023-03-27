@@ -1,0 +1,41 @@
+@mixin input_font {
+    line-height: 1.1em;
+    font-weight: light;
+ }
+ @mixin input_border{
+    border-radius:4px;
+ }  
+ 
+ .v-input{
+   padding: .35rem;
+    box-sizing: border-box;
+    background-color:white;
+    min-width: 2rem; 
+    border:1px solid black;  
+    @include input_border;
+    @include input_font;
+    }
+    input:focus{
+    outline:none;
+    border-color: blue;
+ //    border:var(--common_input_hovered_border);
+    transition: all .1s ease-in-out;
+    }
+ .v-input.x-short{
+ width:3rem;
+ }
+ .v-input.short{
+    width:4rem;
+    }
+ .v-input.medium{
+        width:6rem;
+        }
+ .v-input.large{
+            width:10rem;
+            }
+            .v-input.full{
+                width:100%;
+                }
+ .outline--none{
+    outline: none;
+ }
